@@ -1,0 +1,27 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #F0C000;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #F0C000;
+}
+
+.scroll{
+    animation: scrolldown 1.8s infinite;
+}
+
+@keyframes scrolldown {
+    0%{opacity: 100%;}
+    75%{opacity: 100%;}
+    100%{opacity: 0%; transform: translateY(6px);}
+}

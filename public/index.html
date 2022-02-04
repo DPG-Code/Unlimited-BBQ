@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="DPG Code">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Unlimited BBQ</title>
+
+        <link rel="icon" href="img/LOGO.png">
+        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/7a5ae0b36d.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="bg-black">
+
+        <!-- Reservar -->
+        <div id="reservar" class="z-50 hidden w-full h-screen fixed flex flex-col bg-black">
+
+            <img class="mx-auto my-10 w-40 h-auto" src="img/logo.webp" alt="logo">
+
+            <button id="close" class="m-0 w-10 h-10 bg-neutral-700 hover:bg-yellow-500 rounded-full text-black font-medium absolute top-10 right-10"><i class="fas fa-times"></i></button>
+            
+            <form action="" class="m-auto w-9/12 h-full flex flex-col">
+                <div class="w-full h-auto flex flex-col">
+                    <label class="mx-0 mt-4 text-white text-xl" for="fecha"><p>Fecha</p></label>
+                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white" type="datetime-local" id="fecha" name="fecha" required>
+            
+                    <label class="mx-0 mt-4 text-white text-xl" for="nombre"><p>Nombre</p></label>
+                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white" type="text" id="nombre" name="nombre" required>
+            
+                    <label class="mx-0 mt-4 text-white text-xl" for="personas"><p>Cantidad de personas</p></label>
+                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white" type="number" id="personas" name="personas" required>
+            
+                    <label class="mx-0 mt-4 text-white text-xl" for="tel"><p>Numero de Contacto</p></label>
+                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white" type="tel" id="tel" name="tel" required>
+                </div>
+
+                <button class="mx-auto mt-10 w-auto h-auto px-4 py-2 bg-white hover:bg-yellow-500 rounded-xl text-black font-medium" type="submit">RESERVAR</button>
+            </form>
+
+        </div>
+
+        <!-- Whatsapp -->
+        <a class="z-40 w-12 h-12 flex fixed right-10 bottom-10 text-2xl rounded-full bg-yellow-500" href=""><i class="fab fa-whatsapp m-auto text-black"></i></a>
+
+
+        <!-- Main -->
+        <main class="flex flex-col">
+            <!-- INCIO -->
+            <div id="inicio" class="w-full h-screen relative flex flex-col items-center justify-between">
+
+                <img class="z-30 mx-auto mt-5 mb-0 w-52 h-auto" src="img/logo.webp" alt="Logo">
+
+                <nav class="z-30 mx-auto mt-0 mb-0 w-full h-auto text-xl flex flex-col items-center justify-items-center">
+                    <div class="w-10/12 h-px bg-white"></div>
+                    <ul class="w-10/12 h-max flex justify-around">
+                        <li class="mx-auto my-2"><a href="#sobre-nosotros" class="text-white hover:text-yellow-500">Sobre Nosotros</a></li>
+                        <li class="mx-auto my-2"><a href="#servicios" class="text-white hover:text-yellow-500">Servicios</a></li>
+                        <li class="mx-auto my-2"><a href="#team" class="text-white hover:text-yellow-500">Nuestro Equipo</a></li>
+                    </ul>
+                    <div class="h-px w-10/12 bg-white"></div>
+                </nav>
+
+                <h1 class="z-30 mx-auto mt-0 mb-0 w-auto h-auto text-5xl font-extrabold text-yellow-500">LOS MEJORES ASADOS DE COLOMBIA</h1>
+                <button class="z-30 mx-auto mt-0 mb-0 w-auto h-auto px-4 py-2 bg-yellow-500 rounded-xl text-black font-medium" id="open">RESERVA YA</button>
+
+                <div class="z-30 mx-auto mt-0 mb-10 w-8 h-12 border-2 border-white rounded-2xl flex relative">
+                    <div class="scroll w-1 h-3.5 m-auto bg-yellow-500 rounded-lg absolute top-1.5 left-0 right-0"></div>
+                </div>
+
+                <div class="z-20 m-auto bottom-0 absolute w-full h-2/4 bg-gradient-to-t from-black to-transparent"></div>
+                <div class="z-10 m-auto absolute w-full h-full bg-black opacity-50"></div>
+                <img class="z-0 m-auto absolute w-full h-full object-cover" src="img/background.jpg" alt="steak">
+                
+
+            </div>
+
+            <!-- SOBRE NOSOTROS -->
+            <div id="sobre-nosotros" class="w-full h-max mx-0 my-20 grid grid-cols-2 grid-rows-1">
+                <div class="w-9/12 h-full m-auto flex flex-col">
+                    <h1 class="mb-5 text-4xl text-left font-bold text-yellow-500">SOBRE <span>NOSOTROS</span></h1>
+                    <p class="m-0 text-xl text-left font-extralight text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur esse dolorem cumque iste. Iste quibusdam, minima, tempore incidunt in architecto veniam illum eaque modi nobis explicabo fugiat possimus magnam porro!</p>
+                </div>
+                <div class="w-full h-full m-auto flex flex-col">
+                    <img class="m-auto w-9/12 h-auto" src="img/steak.webp" alt="">
+                </div>
+            </div>
+
+            <!-- SERVICIOS -->
+            <h1 class="mx-auto my-20 text-6xl text-center font-bold text-yellow-500"">SERVICIOS</h1>
+
+            <div id="servicios" class="mb-48 w-full h-max flex flex-col gap-20">
+
+                <div class="w-full h-max m-auto grid grid-cols-2 grid-rows-1">
+                    <div class="m-auto w-9/12 h-auto flex flex-col">
+                        <h3 class="mb-3 text-3xl text-left font-bold text-yellow-500">DOMICILIOS</h3>
+                        <P class="m-0 text-xl text-left font-extralight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+                    </div>
+                    <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/delivery.webp" alt=""></div>
+                </div>
+
+                <div class="w-full h-max m-auto grid grid-cols-2 grid-rows-1">
+                    <div class="m-auto w-9/12 h-auto flex flex-col">
+                        <h3 class="mb-3 text-3xl text-left font-bold text-yellow-500">SHOW EN VIVO</h3>
+                        <P class="m-0 text-xl text-left font-extralight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+                    </div>
+                    <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/show.webp" alt=""></div>
+                </div>
+
+                <div class="w-full h-max m-auto grid grid-cols-2 grid-rows-1">
+                    <div class="m-auto w-9/12 h-auto flex flex-col">
+                        <h3 class="mb-3 text-3xl text-left font-bold text-yellow-500">RESTURANTE</h3>
+                        <P class="m-0 text-xl text-left font-extralight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+                    </div>
+                    <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/restaurant.webp" alt=""></div>
+                </div>
+
+            </div>
+
+            <!-- EQUIPO -->
+            <div id="team" class="w-ful h-screen flex relative">
+                <h1 class="z-50 m-0 text-white absolute top-5 left-5">NUESTRO<span>EQUIPO</span></h1>
+
+                <div class="z-50 w-full h-auto flex absolute">
+                    <div class="m-auto w-12 h-auto"><img src="img/chef.png" alt=""></div>
+                    <div class="m-auto w-12 h-auto"><img src="img/chef.png" alt=""></div>
+                    <div class="m-auto w-12 h-auto"><img src="img/chef.png" alt=""></div>
+                    <div class="m-auto w-12 h-auto"><img src="img/chef.png" alt=""></div>
+                    <div class="m-auto w-12 h-auto"><img src="img/chef.png" alt=""></div>
+                </div>
+
+                <div class="z-40 w-full h-auto flex absolute">
+                    <div class="m-auto w-12 h-12 border-4 border-white rounded-full"></div>
+                    <div class="m-auto w-12 h-12 border-4 border-white rounded-full"></div>
+                    <div class="m-auto w-12 h-12 border-4 border-white rounded-full"></div>
+                    <div class="m-auto w-12 h-12 border-4 border-white rounded-full"></div>
+                </div>
+
+                <div class="z-20 w-full h-1/4 absolute top-0 bg-gradient-to-t from-transparent to-black"></div>
+                <img class="z-10 w-full h-full absolute object-cover" src="img/texture dark.webp" alt="">
+                <div class="z-20 w-full h-1/4 absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
+            </div>
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="w-full h-36 flex flex-col bg-neutral-800">
+            <div class="w-full h-full flex">
+                <img class="m-auto w-28 h-auto" src="img/logo 2.webp" alt="">
+                <div class="m-auto w-auto h-auto flex">
+                    <a class="mx-5 my-auto text-white hover:text-yellow-500 text-2xl" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="mx-5 my-auto text-white hover:text-yellow-500 text-2xl" href=""><i class="fab fa-facebook"></i></a>
+                    <a class="mx-5 my-auto text-white hover:text-yellow-500 text-2xl" href=""><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="w-ful h-px bg-neutral-600"></div>
+
+            <div class="w-full h-full flex">
+                <p class="m-auto text-base font-extralight text-white">Copyright &#169; 2021</p>
+                <p class="m-auto text-base font-extralight text-white">privacy policy Terms & condition</p>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
