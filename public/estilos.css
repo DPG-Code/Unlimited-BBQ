@@ -27,6 +27,7 @@ body{
   100%{transform: translateY(6px); opacity: 0%;}
 }
 
+
 #reservar{
   display: none;
 }
@@ -34,3 +35,16 @@ body{
   0%{opacity: 0%;}
   100%{opacity: 100%;}
 }
+
+
+#nav-mobile{
+  display: none;
+}
+@keyframes nav-mobile {
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(0%);}
+}
+/*@keyframes nav-mobile-desaparecer {
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(100%);}
+}*/

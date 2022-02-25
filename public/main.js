@@ -10,5 +10,19 @@ open.addEventListener("click", function() {
 
 close.addEventListener("click", function() {
 	reservar.style.display = "none";
-	reservar.style.animation = "desaparecer 0.5s forwards";
+});
+
+// NAV
+const openNav = document.getElementById("open-nav");
+const closeNav = document.getElementById("close-nav");
+const navMobile = document.getElementById("nav-mobile");
+
+openNav.addEventListener("click", function() {
+	navMobile.style.display = "flex";
+	navMobile.style.animation = "nav-mobile 0.6s linear";
+});
+
+closeNav.addEventListener("click", function() {
+	navMobile.style.display = "none";
+	//navMobile.style.animation = "nav-mobile-desaparecer 0.6s linear";
 });

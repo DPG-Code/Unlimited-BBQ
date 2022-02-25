@@ -17,114 +17,132 @@
     <body class="bg-black flex flex-col">
 
         <!-- Reservar -->
-        <div id="reservar" class="z-50 w-full h-screen fixed flex-col bg-black">
+        <div id="reservar" class="z-100 w-full h-screen min-h-movil fixed flex-col bg-black">
 
-            <img class="mx-auto my-10 w-40 h-auto" src="img/logo.webp" alt="logo">
+            <img class="mx-auto mt-10 mb-20 w-28 h-auto   sm:w-40   xl:w-48"src="img/logo.webp" alt="logo">
 
-            <button id="close" class="m-0 w-10 h-10 bg-neutral-700 hover:bg-primal-color rounded-full text-black font-medium absolute top-10 right-10"><i class="fas fa-times"></i></button>
+            <button id="close" class="m-0 w-10 h-10 bg-neutral-700 hover:bg-primal-color rounded-full text-black font-medium absolute top-10 right-10   lg:w-12 lg:h-12   2xl:w-14 2xl:h-14"><i class="fas fa-times"></i></button>
             
-            <form action="" class="m-auto w-9/12 h-full flex flex-col">
+            <form action="" class="m-auto w-9/12 h-full flex flex-col justify-between">
                 <div class="w-full h-auto flex flex-col">
-                    <label class="mx-0 mt-4 text-white text-xl" for="fecha"><p>Fecha</p></label>
-                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white" type="datetime-local" id="fecha" name="fecha" required>
+                    <label class="mx-0 mt-4 text-white text-xl   sm:text-lg   xl:text-xl xl:mt-6" for="fecha"><p>Fecha</p></label>
+                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white   lg:text-xl" type="datetime-local" id="fecha" name="fecha" required>
             
-                    <label class="mx-0 mt-4 text-white text-xl" for="nombre"><p>Nombre</p></label>
-                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white" type="text" id="nombre" name="nombre" required>
+                    <label class="mx-0 mt-4 text-white text-xl   sm:text-lg   xl:text-xl xl:mt-6" for="nombre"><p>Nombre</p></label>
+                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white   lg:text-xl" type="text" id="nombre" name="nombre" required>
             
-                    <label class="mx-0 mt-4 text-white text-xl" for="personas"><p>Cantidad de personas</p></label>
-                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white" type="number" id="personas" name="personas" required>
+                    <label class="mx-0 mt-4 text-white text-xl   sm:text-lg   xl:text-xl xl:mt-6" for="personas"><p>Cantidad de personas</p></label>
+                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white   lg:text-xl" type="number" id="personas" name="personas" required>
             
-                    <label class="mx-0 mt-4 text-white text-xl" for="tel"><p>Numero de Contacto</p></label>
-                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white" type="tel" id="tel" name="tel" required>
+                    <label class="mx-0 mt-4 text-white text-xl   sm:text-lg   xl:text-xl xl:mt-6" for="tel"><p>Numero de Contacto</p></label>
+                    <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white   lg:text-xl" type="tel" id="tel" name="tel" required>
                 </div>
 
-                <button class="mx-auto mt-10 w-auto h-auto px-4 py-2 bg-white hover:bg-primal-color rounded-xl text-black font-medium" type="submit">RESERVAR</button>
+                <button class="mx-auto mt-10 mb-14 w-auto h-auto px-4 py-2 bg-white hover:bg-primal-color rounded-xl text-black font-medium" type="submit">RESERVAR</button>
             </form>
 
         </div>
 
         <!-- Whatsapp -->
-        <a class="z-40 w-12 h-12 flex fixed right-10 bottom-10 text-2xl rounded-full bg-primal-color" href=""><i class="fab fa-whatsapp m-auto text-black"></i></a>
+        <a class="z-40 w-12 h-12 flex fixed right-10 bottom-10 text-2xl rounded-full bg-primal-color   lg:w-16 lg:h-16 lg:text-3xl lg:bottom-16 lg:right-16" href=""><i class="fab fa-whatsapp m-auto text-black"></i></a>
 
 
         <!-- Main -->
         <main class="w-full h-auto flex flex-col">
             <!-- INCIO -->
-            <div id="inicio" class="w-full h-screen relative flex flex-col items-center justify-between">
+            <div id="inicio" class="w-full h-screen min-h-movil max-h-movil relative flex flex-col items-center justify-between   lg:min-h-pc lg:max-h-pc">
+                <!-- NAV MOBILE -->
+                <nav class="z-50 mx-auto mt-8 mb-8 w-10/12 h-auto text-xl flex items-center justify-between   sm:hidden">
+                    <img class="m-0 w-24 h-auto" src="img/logo.webp" alt="Logo">
+                    <div id="open-nav" class="m-0 w-auto h-auto flex flex-col">
+                        <div class="mx-auto my-1 w-4 h-0.5 rounded-lg bg-white"></div>
+                        <div class="mx-auto my-1 w-6 h-0.5 rounded-lg bg-white"></div>
+                        <div class="mx-auto my-1 w-4 h-0.5 rounded-lg bg-white"></div>
+                    </div>
+                    <ul id="nav-mobile" class="z-50 m-0 w-1/2 h-full flex-col items-center justify-center bg-black fixed top-0 right-0">
+                        <a id="close-nav" class="mx-auto mb-12 w-10 h-10 flex rounded-full bg-neutral-600 hover:bg-primal-color"><i class="fa-solid fa-arrow-left   m-auto text-xl text-black"></i></a>
+                        <li class="mx-auto my-7"><a href="#sobre-nosotros" class="text-white hover:text-primal-color">Sobre Nosotros</a></li>
+                        <li class="mx-auto my-7"><a href="#servicios" class="text-white hover:text-primal-color">Servicios</a></li>
+                        <li class="mx-auto my-7"><a href="#team" class="text-white hover:text-primal-color">Nuestro Equipo</a></li>
+                    </ul>
+                </nav>
 
-                <img class="z-30 mx-auto mt-5 mb-5 w-52 h-auto" src="img/logo.webp" alt="Logo">
-
-                <nav class="z-30 mx-auto mt-5 mb-5 w-full h-auto text-xl flex flex-col items-center justify-items-center">
-                    <div class="w-10/12 h-px bg-white"></div>
+                <!-- LOGO -->
+                <img class="z-30 mx-auto mt-5 mb-5 w-52 h-auto hidden   sm:flex   lg:mt-10 lg:mb-10   2xl:w-64" src="img/logo.webp" alt="Logo">
+                <!-- NAV PC -->
+                <nav class="z-30 mx-auto mt-5 mb-5 w-full h-auto text-xl hidden flex-col items-center justify-items-center   sm:flex   2xl:mt-10 2xl:mb-10">
+                    <div class="h-px w-10/12 bg-white"></div>
                     <ul class="w-10/12 h-max flex justify-around">
-                        <li class="mx-auto my-2"><a href="#sobre-nosotros" class="text-white hover:text-primal-color">Sobre Nosotros</a></li>
-                        <li class="mx-auto my-2"><a href="#servicios" class="text-white hover:text-primal-color">Servicios</a></li>
-                        <li class="mx-auto my-2"><a href="#team" class="text-white hover:text-primal-color">Nuestro Equipo</a></li>
+                        <li class="mx-auto my-2"><a href="#sobre-nosotros" class="text-lg text-white hover:text-primal-color   xl:text-2xl   2xl:text-4xl 2xl:my:5">Sobre Nosotros</a></li>
+                        <li class="mx-auto my-2"><a href="#servicios" class="text-lg text-white hover:text-primal-color   xl:text-2xl   2xl:text-4xl 2xl:my:5">Servicios</a></li>
+                        <li class="mx-auto my-2"><a href="#team" class="text-lg text-white hover:text-primal-color   xl:text-2xl   2xl:text-4xl 2xl:my:5">Nuestro Equipo</a></li>
                     </ul>
                     <div class="h-px w-10/12 bg-white"></div>
                 </nav>
 
-                <h1 class="z-30 mx-auto m-auto w-auto h-auto text-5xl font-extrabold text-primal-color">¡Aquì no existen los LIMITES!</h1>
-                <button id="open" class="z-30 m-auto w-auto h-auto px-4 py-2 bg-primal-color rounded-xl text-black font-medium">RESERVA YA</button>
+                <!-- TITLE AND BUTTON -->
+                <h1 class="z-30 m-auto w-9/12 h-auto text-5xl text-center font-extrabold text-primal-color   md:text-5xl   lg:text-6xl   xl:text-7xl   2xl:text-8xl">¡AQUI NO EXISTEN LOS LIMITES!</h1>
+                <button id="open" class="z-30 m-auto w-auto h-auto px-4 py-2 bg-primal-color rounded-xl text-lg text-black font-medium   lg:text-xl   2xl:text-3xl">RESERVA YA</button>
 
-                <div class="z-30 mx-auto mt-10 mb-10 w-8 h-12 border-2 border-white rounded-2xl flex relative">
+                <!-- MOUSE -->
+                <div class="z-30 mx-auto mt-12 mb-12 w-8 h-12 border-2 border-white rounded-2xl flex relative   lg:mb-16">
                     <div class="scroll w-1 h-3.5 m-auto bg-primal-color rounded-lg absolute top-1.5 left-0 right-0"></div>
                 </div>
 
+                <!-- BACKGROUND -->
                 <div class="z-20 m-auto bottom-0 absolute w-full h-2/4 bg-gradient-to-t from-black to-transparent"></div>
                 <div class="z-10 m-auto absolute w-full h-full bg-black opacity-50"></div>
                 <img class="z-0 m-auto absolute w-full h-full object-cover" src="img/background.jpg" alt="steak">
-                
-
             </div>
 
             <!-- SOBRE NOSOTROS -->
-            <div id="sobre-nosotros" class="w-full h-max mx-0 my-20 grid grid-cols-2 grid-rows-1">
-                <div class="w-9/12 h-full m-auto flex flex-col">
-                    <h1 class="mb-5 text-4xl text-left font-bold text-primal-color">SOBRE <span>NOSOTROS</span></h1>
-                    <p class="m-0 text-xl text-left font-extralight text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur esse dolorem cumque iste. Iste quibusdam, minima, tempore incidunt in architecto veniam illum eaque modi nobis explicabo fugiat possimus magnam porro!</p>
+            <div id="sobre-nosotros" class="w-full h-auto mx-auto mt-20 mb-40 flex flex-col   sm:grid sm:grid-cols-2 sm:grid-rows-1">
+                <div class="w-9/12 h-auto mx-auto mb-5 flex flex-col justify-center">
+                    <h1 class="mb-5 text-2xl text-center font-bold text-primal-color   sm:text-left sm:my-3   lg:text-5xl   2xl:text-6xl">SOBRE <span>NOSOTROS</span></h1>
+                    <p class="m-0 text-base text-center font-extralight text-white   sm:text-left sm:my-3   lg:text-xl   2xl:text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur esse dolorem cumque iste. Iste quibusdam, minima, tempore incidunt in architecto veniam illum eaque modi nobis explicabo fugiat possimus magnam porro!</p>
                 </div>
-                <div class="w-full h-full m-auto flex flex-col">
-                    <img class="m-auto w-9/12 h-auto" src="img/steak.webp" alt="">
+                <div class="w-full h-auto m-auto flex flex-col">
+                    <img class="m-auto w-8/12 h-auto   sm:w-9/12" src="img/steak.webp" alt="">
                 </div>
             </div>
 
             <!-- SERVICIOS -->
-            <h1 class="mx-auto my-20 text-6xl text-center font-bold text-primal-color"">SERVICIOS</h1>
+            <h1 class="mx-auto mt-0 mb-10 text-2xl text-center font-bold text-primal-color   lg:text-6xl lg:mb-20   2xl:text-7xl 2xg:mb-40">SERVICIOS</h1>
 
-            <div id="servicios" class="mb-48 w-full h-max flex flex-col gap-20">
-
-                <div class="w-full h-max m-auto grid grid-cols-2 grid-rows-1">
-                    <div class="m-auto w-9/12 h-auto flex flex-col">
-                        <h3 class="mb-3 text-3xl text-left font-bold text-primal-color">DOMICILIOS</h3>
-                        <P class="m-0 text-xl text-left font-extralight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+            <div id="servicios" class="mb-40 w-full h-max min-h-min flex flex-col gap-10   lg:gap-40">
+                <!-- 1 -->
+                <div class="w-full h-auto m-auto flex flex-col   sm:grid sm:grid-cols-2 sm:grid-rows-1">
+                    <div class="m-auto mb-3 w-9/12 h-auto flex flex-col   sm:my-auto">
+                        <h3 class="mx-0 mb-2 text-xl text-left font-bold text-primal-color   lg:text-3xl   2xl:text-5xl 2xl:mb-5">DOMICILIOS</h3>
+                        <P class="mx-0 mb-5 text-lg text-left font-extralight text-white   lg:text-xl   2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
                     </div>
                     <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/delivery.webp" alt=""></div>
                 </div>
-
-                <div class="w-full h-max m-auto grid grid-cols-2 grid-rows-1">
-                    <div class="m-auto w-9/12 h-auto flex flex-col">
-                        <h3 class="mb-3 text-3xl text-left font-bold text-primal-color">SHOW EN VIVO</h3>
-                        <P class="m-0 text-xl text-left font-extralight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+                <!-- 2 -->
+                <div class="w-full h-auto m-auto flex flex-col   sm:grid sm:grid-cols-2 sm:grid-rows-1">
+                    <div class="m-auto mb-3 w-9/12 h-auto flex flex-col   sm:my-auto">
+                        <h3 class="mx-0 mb-2 text-xl text-left font-bold text-primal-color   lg:text-3xl   2xl:text-5xl 2xl:mb-5">SHOW EN VIVO</h3>
+                        <P class="mx-0 mb-5 text-lg text-left font-extralight text-white   lg:text-xl   2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
                     </div>
                     <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/show.webp" alt=""></div>
                 </div>
-
-                <div class="w-full h-max m-auto grid grid-cols-2 grid-rows-1">
-                    <div class="m-auto w-9/12 h-auto flex flex-col">
-                        <h3 class="mb-3 text-3xl text-left font-bold text-primal-color">RESTURANTE</h3>
-                        <P class="m-0 text-xl text-left font-extralight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+                <!-- 3 -->
+                <div class="w-full h-auto m-auto flex flex-col   sm:grid sm:grid-cols-2 sm:grid-rows-1">
+                    <div class="m-auto mb-3 w-9/12 h-auto flex flex-col   sm:my-auto">
+                        <h3 class="mx-0 mb-2 text-xl text-left font-bold text-primal-color   lg:text-3xl   2xl:text-5xl 2xl:mb-5">RESTURANTE</h3>
+                        <P class="mx-0 mb-5 text-lg text-left font-extralight text-white   lg:text-xl   2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
                     </div>
                     <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/restaurant.webp" alt=""></div>
                 </div>
-
             </div>
 
             <!-- EQUIPO -->
             <div id="team" class="m-0 w-full h-100 flex relative">
-                <h1 class="z-30 m-auto text-5xl font-bold text-primal-color absolute top-16 left-16">NUESTRO EQUIPO</h1>
+                <h1 class="z-30 m-auto text-3xl text-center font-bold text-primal-color absolute top-10 left-0 right-0   lg:text-5xl">NUESTRO EQUIPO</h1>
 
+                <img class="z-20 m-auto w-auto h-2/4 absolute top-0 bottom-0 right-1/2" src="img/chef 2.png" alt="">
                 <img class="z-30 m-auto w-auto h-2/4 absolute top-0 left-0 bottom-0 right-0" src="img/chef.png" alt="">
+                <img class="z-20 m-auto w-auto h-2/4 absolute top-0 bottom-0 left-1/2" src="img/chef 2.png" alt="">
 
                 <div class="z-30 m-auto w-16 h-16 opacity-20 bg-primal-color rounded-full absolute bottom-16 left-16"></div>
                 <div class="z-30 m-auto w-20 h-20 opacity-20 border-8 border-primal-color rounded-full absolute bottom-28 left-28"></div>
@@ -139,21 +157,21 @@
 
 
         <!-- Footer -->
-        <footer class="w-full h-36 flex flex-col bg-neutral-800">
+        <footer class="w-full h-32 flex flex-col bg-neutral-800   sm:h-36   lg:h-56">
             <div class="w-full h-full flex">
-                <img class="m-auto w-28 h-auto" src="img/logo 2.webp" alt="">
+                <img class="m-auto w-20 h-auto   lg:w-28" src="img/logo 2.webp" alt="">
                 <div class="m-auto w-auto h-auto flex">
-                    <a class="mx-5 my-auto text-white hover:text-primal-color text-2xl" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="mx-5 my-auto text-white hover:text-primal-color text-2xl" href=""><i class="fab fa-facebook"></i></a>
-                    <a class="mx-5 my-auto text-white hover:text-primal-color text-2xl" href=""><i class="fab fa-tiktok"></i></a>
+                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href=""><i class="fab fa-facebook"></i></a>
+                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href=""><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
 
             <div class="w-ful h-px bg-neutral-600"></div>
 
             <div class="w-full h-full flex">
-                <p class="m-auto text-base font-extralight text-white">Copyright &#169; 2021</p>
-                <p class="m-auto text-base font-extralight text-white">privacy policy Terms & condition</p>
+                <p class="m-auto text-xs font-extralight text-white   lg:text-xl">Copyright &#169; 2021</p>
+                <p class="m-auto text-xs font-extralight text-white   lg:text-xl">Privacy Policy</p>
             </div>
         </footer>
 
