@@ -17,15 +17,14 @@
     <body class="bg-black flex flex-col">
 
         <!-- Reservar -->
-        <div id="reservar" class="z-100 w-full h-screen min-h-movil fixed flex-col bg-black">
-
-            <img class="mx-auto mt-10 mb-20 w-28 h-auto   sm:w-40   xl:w-48"src="img/logo.webp" alt="logo">
-
+        <div id="reservar" class="z-100 w-full h-screen min-h-movil fixed flex flex-col items-center justify-around bg-black">
             <button id="close" class="m-0 w-10 h-10 bg-neutral-700 hover:bg-primal-color rounded-full text-black font-medium absolute top-10 right-10   lg:w-12 lg:h-12   2xl:w-14 2xl:h-14"><i class="fas fa-times"></i></button>
             
-            <form action="" class="m-auto w-9/12 h-full flex flex-col justify-between">
+            <img class="m-0 w-28 h-auto   sm:w-40   xl:w-48"src="img/logo.webp" alt="logo">
+
+            <form action="" class="m-0 w-9/12 h-auto flex flex-col">
                 <div class="w-full h-auto flex flex-col">
-                    <label class="mx-0 mt-4 text-white text-xl   sm:text-lg   xl:text-xl xl:mt-6" for="fecha"><p>Fecha</p></label>
+                    <label class="mx-0 text-white text-xl   sm:text-lg   xl:text-xl xl:mt-6" for="fecha"><p>Fecha</p></label>
                     <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white   lg:text-xl" type="datetime-local" id="fecha" name="fecha" required>
             
                     <label class="mx-0 mt-4 text-white text-xl   sm:text-lg   xl:text-xl xl:mt-6" for="nombre"><p>Nombre</p></label>
@@ -37,14 +36,14 @@
                     <label class="mx-0 mt-4 text-white text-xl   sm:text-lg   xl:text-xl xl:mt-6" for="tel"><p>Numero de Contacto</p></label>
                     <input class="mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white   lg:text-xl" type="tel" id="tel" name="tel" required>
                 </div>
-
-                <button class="mx-auto mt-10 mb-14 w-auto h-auto px-4 py-2 bg-white hover:bg-primal-color rounded-xl text-black font-medium" type="submit">RESERVAR</button>
             </form>
+
+            <button class="m-0 w-auto h-auto px-4 py-2 bg-white hover:bg-primal-color rounded-xl text-black font-medium" type="submit">RESERVAR</button>
 
         </div>
 
         <!-- Whatsapp -->
-        <a class="z-40 w-12 h-12 flex fixed right-10 bottom-10 text-2xl rounded-full bg-primal-color   lg:w-16 lg:h-16 lg:text-3xl lg:bottom-16 lg:right-16" href=""><i class="fab fa-whatsapp m-auto text-black"></i></a>
+        <a class="z-40 w-12 h-12 flex fixed right-10 bottom-10 text-2xl rounded-full bg-primal-color   lg:w-16 lg:h-16 lg:text-3xl lg:bottom-16 lg:right-16" href="" target="_blank"><i class="fab fa-whatsapp m-auto text-black"></i></a>
 
 
         <!-- Main -->
@@ -60,7 +59,7 @@
                         <div class="mx-auto my-1 w-4 h-0.5 rounded-lg bg-white"></div>
                     </div>
                     <ul id="nav-mobile" class="z-50 m-0 w-1/2 h-full flex-col items-center justify-center bg-black fixed top-0 right-0">
-                        <a id="close-nav" class="mx-auto mb-12 w-10 h-10 flex rounded-full bg-neutral-600 hover:bg-primal-color"><i class="fa-solid fa-arrow-left   m-auto text-xl text-black"></i></a>
+                        <a id="close-nav" class="mx-auto mb-8 w-10 h-10 flex bg-neutral-600 rounded-full hover:bg-primal-color"><div class="m-auto w-6 h-1 rounded-lg bg-black"></div></a>
                         <li class="mx-auto my-7"><a href="#sobre-nosotros" class="text-white hover:text-primal-color">Sobre Nosotros</a></li>
                         <li class="mx-auto my-7"><a href="#servicios" class="text-white hover:text-primal-color">Servicios</a></li>
                         <li class="mx-auto my-7"><a href="#team" class="text-white hover:text-primal-color">Nuestro Equipo</a></li>
@@ -137,17 +136,14 @@
             </div>
 
             <!-- EQUIPO -->
-            <div id="team" class="m-0 w-full h-100 flex relative">
-                <h1 class="z-30 m-auto text-3xl text-center font-bold text-primal-color absolute top-10 left-0 right-0   lg:text-5xl">NUESTRO EQUIPO</h1>
+            <div id="team" class="m-0 w-full h-96 flex flex-col relative">
+                <h1 class="z-30 my-2 mx-0 h-auto text-3xl text-center font-bold text-primal-color   lg:text-5xl">NUESTRO EQUIPO</h1>
 
-                <img class="z-20 m-auto w-auto h-2/4 absolute top-0 bottom-0 right-1/2" src="img/chef 2.png" alt="">
-                <img class="z-30 m-auto w-auto h-2/4 absolute top-0 left-0 bottom-0 right-0" src="img/chef.png" alt="">
-                <img class="z-20 m-auto w-auto h-2/4 absolute top-0 bottom-0 left-1/2" src="img/chef 2.png" alt="">
-
-                <div class="z-30 m-auto w-16 h-16 opacity-20 bg-primal-color rounded-full absolute bottom-16 left-16"></div>
-                <div class="z-30 m-auto w-20 h-20 opacity-20 border-8 border-primal-color rounded-full absolute bottom-28 left-28"></div>
-                <div class="z-30 m-auto w-16 h-16 opacity-20 bg-primal-color rounded-full absolute top-16 right-16"></div>
-                <div class="z-30 m-auto w-20 h-20 opacity-20 border-8 border-primal-color rounded-full absolute top-28 right-28"></div>
+                <div class="z-30 m-0 w-full h-full flex items-center justify-evenly">
+                    <img class="m-auto w-auto h-52" src="img/chef 2.png" alt="">
+                    <img class="m-auto w-auto h-52" src="img/chef.png" alt="">
+                    <img class="m-auto w-auto h-52" src="img/chef 2.png" alt="">
+                </div>
 
                 <div class="z-20 w-full h-48 absolute top-0 bg-gradient-to-t from-transparent to-black"></div>
                 <img class="z-10 w-full h-full absolute object-cover" src="img/texture dark.webp" alt="">
@@ -161,17 +157,16 @@
             <div class="w-full h-full flex">
                 <img class="m-auto w-20 h-auto   lg:w-28" src="img/logo 2.webp" alt="">
                 <div class="m-auto w-auto h-auto flex">
-                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href=""><i class="fab fa-facebook"></i></a>
-                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href=""><i class="fab fa-tiktok"></i></a>
+                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href="https://www.instagram.com/unlimited_bbq/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href="https://www.facebook.com/Unlimited-BBQ-101740038843838/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a class="mx-2 my-auto text-white hover:text-primal-color text-xl   lg:text-3xl" href="https://www.tiktok.com/@unlimited_bbq_col" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
 
             <div class="w-ful h-px bg-neutral-600"></div>
 
             <div class="w-full h-full flex">
-                <p class="m-auto text-xs font-extralight text-white   lg:text-xl">Copyright &#169; 2021</p>
-                <p class="m-auto text-xs font-extralight text-white   lg:text-xl">Privacy Policy</p>
+                <p class="m-auto text-xs font-extralight text-white   lg:text-xl">Copyright &#169; 2021 - Privacy Policy</p>
             </div>
         </footer>
 
