@@ -21,12 +21,12 @@ module.exports = {
       maxHeight: {
         'movil': '850px',
         'pc': '1000px',
+      },
+      minHeight: {
+        'movil': '600px',
+        'pc': '700px',
       }
     },
-    minHeight: {
-      'movil': '600px',
-      'pc': '700px',
-    }
   },
   plugins: [],
 }

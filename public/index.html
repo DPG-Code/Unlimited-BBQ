@@ -17,7 +17,7 @@
     <body class="bg-black flex flex-col">
 
         <!-- Reservar -->
-        <div id="reservar" class="z-100 w-full h-screen min-h-movil fixed flex flex-col items-center justify-around bg-black">
+        <div id="reservar" class="z-100 w-full h-full fixed flex flex-col items-center justify-around bg-black">
             <button id="close" class="m-0 w-10 h-10 bg-neutral-700 hover:bg-primal-color rounded-full text-black font-medium absolute top-10 right-10   lg:w-12 lg:h-12   2xl:w-14 2xl:h-14"><i class="fas fa-times"></i></button>
             
             <img class="m-0 w-28 h-auto   sm:w-40   xl:w-48"src="img/logo.webp" alt="logo">
@@ -49,7 +49,7 @@
         <!-- Main -->
         <main class="w-full h-auto flex flex-col">
             <!-- INCIO -->
-            <div id="inicio" class="w-full h-screen min-h-movil max-h-movil relative flex flex-col items-center justify-between   lg:min-h-pc lg:max-h-pc">
+            <div id="inicio" class="w-full h-screen min-h-movil max-h-movil relative flex flex-col items-center justify-between">
                 <!-- NAV MOBILE -->
                 <nav class="z-50 mx-auto mt-8 mb-8 w-10/12 h-auto text-xl flex items-center justify-between   sm:hidden">
                     <img class="m-0 w-24 h-auto" src="img/logo.webp" alt="Logo">
@@ -67,7 +67,7 @@
                 </nav>
 
                 <!-- LOGO -->
-                <img class="z-30 mx-auto mt-5 mb-5 w-52 h-auto hidden   sm:flex   lg:mt-10 lg:mb-10   2xl:w-64" src="img/logo.webp" alt="Logo">
+                <img class="z-30 mx-auto mt-5 mb-5 w-48 h-auto hidden   sm:flex   lg:mt-10 lg:mb-10   2xl:w-60" src="img/logo.webp" alt="Logo">
                 <!-- NAV PC -->
                 <nav class="z-30 mx-auto mt-5 mb-5 w-full h-auto text-xl hidden flex-col items-center justify-items-center   sm:flex   2xl:mt-10 2xl:mb-10">
                     <div class="h-px w-10/12 bg-white"></div>
@@ -80,8 +80,8 @@
                 </nav>
 
                 <!-- TITLE AND BUTTON -->
-                <h1 class="z-30 m-auto w-9/12 h-auto text-5xl text-center font-extrabold text-primal-color   md:text-5xl   lg:text-6xl   xl:text-7xl   2xl:text-8xl">¡AQUI NO EXISTEN LOS LIMITES!</h1>
-                <button id="open" class="z-30 m-auto w-auto h-auto px-4 py-2 bg-primal-color rounded-xl text-lg text-black font-medium   lg:text-xl   2xl:text-3xl">RESERVA YA</button>
+                <h1 class="z-30 m-auto w-9/12 h-auto text-5xl text-center font-extrabold text-primal-color   md:text-5xl   xl:text-6xl   2xl:text-7xl">¡AQUI NO EXISTEN LOS LIMITES!</h1>
+                <button id="open" class="z-30 m-auto w-auto h-auto px-4 py-2 bg-primal-color rounded-xl text-xs text-black font-medium   lg:text-lg   2xl:text-2xl">RESERVA YA</button>
 
                 <!-- MOUSE -->
                 <div class="z-30 mx-auto mt-12 mb-12 w-8 h-12 border-2 border-white rounded-2xl flex relative   lg:mb-16">
@@ -97,8 +97,8 @@
             <!-- SOBRE NOSOTROS -->
             <div id="sobre-nosotros" class="w-full h-auto mx-auto mt-20 mb-40 flex flex-col   sm:grid sm:grid-cols-2 sm:grid-rows-1">
                 <div class="w-9/12 h-auto mx-auto mb-5 flex flex-col justify-center">
-                    <h1 class="mb-5 text-2xl text-center font-bold text-primal-color   sm:text-left sm:my-3   lg:text-5xl   2xl:text-6xl">SOBRE <span>NOSOTROS</span></h1>
-                    <p class="m-0 text-base text-center font-extralight text-white   sm:text-left sm:my-3   lg:text-xl   2xl:text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur esse dolorem cumque iste. Iste quibusdam, minima, tempore incidunt in architecto veniam illum eaque modi nobis explicabo fugiat possimus magnam porro!</p>
+                    <h1 class="mb-5 text-2xl text-center font-bold text-primal-color   sm:text-left sm:my-3   lg:text-5xl   2xl:text-6xl">SOBRE <span>NOSOTROS.</span></h1>
+                    <p class="m-0 text-base text-center font-extralight text-white   sm:text-left sm:my-3   lg:text-xl   2xl:text-2xl">Fundada en 2019 por un grupo de jovenes yumbeños nace Unlimited BBQ, un restaurante especializado en carnes a la parrilla, hoy sueñan con convertirse en el mejor BBQ de Colombia.</p>
                 </div>
                 <div class="w-full h-auto m-auto flex flex-col">
                     <img class="m-auto w-8/12 h-auto   sm:w-9/12" src="img/steak.webp" alt="">
@@ -106,30 +106,30 @@
             </div>
 
             <!-- SERVICIOS -->
-            <h1 class="mx-auto mt-0 mb-10 text-2xl text-center font-bold text-primal-color   lg:text-6xl lg:mb-20   2xl:text-7xl 2xg:mb-40">SERVICIOS</h1>
+            <h1 class="mx-auto mt-0 mb-10 text-3xl text-center font-bold text-primal-color   lg:text-6xl lg:mb-20   2xl:text-7xl 2xg:mb-40">SERVICIOS</h1>
 
             <div id="servicios" class="mb-40 w-full h-max min-h-min flex flex-col gap-10   lg:gap-40">
                 <!-- 1 -->
                 <div class="w-full h-auto m-auto flex flex-col   sm:grid sm:grid-cols-2 sm:grid-rows-1">
                     <div class="m-auto mb-3 w-9/12 h-auto flex flex-col   sm:my-auto">
-                        <h3 class="mx-0 mb-2 text-xl text-left font-bold text-primal-color   lg:text-3xl   2xl:text-5xl 2xl:mb-5">DOMICILIOS</h3>
-                        <P class="mx-0 mb-5 text-lg text-left font-extralight text-white   lg:text-xl   2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+                        <h3 class="mx-0 mb-2 text-2xl text-left font-bold text-primal-color   lg:text-4xl   2xl:text-6xl 2xl:mb-5">DOMICILIOS.</h3>
+                        <P class="mx-0 mb-5 text-base text-left font-extralight text-white   lg:text-lg   2xl:text-xl">Implementamos un empaquetado especial para que tu comida llegue como recien sacada del grill.</P>
                     </div>
                     <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/delivery.webp" alt=""></div>
                 </div>
                 <!-- 2 -->
                 <div class="w-full h-auto m-auto flex flex-col   sm:grid sm:grid-cols-2 sm:grid-rows-1">
                     <div class="m-auto mb-3 w-9/12 h-auto flex flex-col   sm:my-auto">
-                        <h3 class="mx-0 mb-2 text-xl text-left font-bold text-primal-color   lg:text-3xl   2xl:text-5xl 2xl:mb-5">SHOW EN VIVO</h3>
-                        <P class="mx-0 mb-5 text-lg text-left font-extralight text-white   lg:text-xl   2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+                        <h3 class="mx-0 mb-2 text-2xl text-left font-bold text-primal-color   lg:text-4xl   2xl:text-6xl 2xl:mb-5">SHOW EN VIVO.</h3>
+                        <P class="mx-0 mb-5 text-base text-left font-extralight text-white   lg:text-lg   2xl:text-xl">LLevamos toda la experiencia de la parrilla a cualquier lugar, tu pones el limite.</P>
                     </div>
                     <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/show.webp" alt=""></div>
                 </div>
                 <!-- 3 -->
                 <div class="w-full h-auto m-auto flex flex-col   sm:grid sm:grid-cols-2 sm:grid-rows-1">
                     <div class="m-auto mb-3 w-9/12 h-auto flex flex-col   sm:my-auto">
-                        <h3 class="mx-0 mb-2 text-xl text-left font-bold text-primal-color   lg:text-3xl   2xl:text-5xl 2xl:mb-5">RESTURANTE</h3>
-                        <P class="mx-0 mb-5 text-lg text-left font-extralight text-white   lg:text-xl   2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere perspiciatis animi ducimus, harum nobis officia voluptatibus minima autem nemo libero debitis fugit odit rem nesciunt. Qui repudiandae repellat quaerat.</P>
+                        <h3 class="mx-0 mb-2 text-2xl text-left font-bold text-primal-color   lg:text-4xl   2xl:text-6xl 2xl:mb-5">RESTURANTE.</h3>
+                        <P class="mx-0 mb-5 text-base text-left font-extralight text-white   lg:text-lg   2xl:text-xl">Nuestras sedes con ambientacion natural, estan adaptadas para la mejor experiencia. ¡Que esperas visitanos!</P>
                     </div>
                     <div class="w-full h-full flex"><img class="m-auto w-9/12 h-auto rounded-2xl" src="img/restaurant.webp" alt=""></div>
                 </div>
@@ -137,7 +137,7 @@
 
             <!-- EQUIPO -->
             <div id="team" class="m-0 w-full h-96 flex flex-col relative">
-                <h1 class="z-30 my-2 mx-0 h-auto text-3xl text-center font-bold text-primal-color   lg:text-5xl">NUESTRO EQUIPO</h1>
+                <h1 class="z-30 mt-8 h-auto text-3xl text-center font-bold text-primal-color   lg:text-6xl   2xl:text-7xl">NUESTRO EQUIPO</h1>
 
                 <div class="z-30 m-0 w-full h-full flex items-center justify-evenly">
                     <img class="m-auto w-auto h-52" src="img/chef 2.png" alt="">

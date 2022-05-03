@@ -651,8 +651,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
+.h-full {
+  height: 100%;
 }
 
 .h-10 {
@@ -667,16 +667,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-0\.5 {
   height: 0.125rem;
 }
 
 .h-0 {
   height: 0px;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-1 {
@@ -729,6 +729,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 600px;
 }
 
+.min-h-min {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -773,8 +779,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.w-52 {
-  width: 13rem;
+.w-48 {
+  width: 12rem;
 }
 
 .w-8 {
@@ -955,6 +961,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -963,11 +974,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-medium {
@@ -1112,14 +1118,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 14rem;
   }
 
-  .lg\:max-h-pc {
-    max-height: 1000px;
-  }
-
-  .lg\:min-h-pc {
-    min-height: 700px;
-  }
-
   .lg\:w-12 {
     width: 3rem;
   }
@@ -1146,14 +1144,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.25rem;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1176,8 +1184,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2rem;
   }
 
-  .xl\:text-7xl {
-    font-size: 4.5rem;
+  .xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 }
@@ -1203,8 +1211,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 3.5rem;
   }
 
-  .\32xl\:w-64 {
-    width: 16rem;
+  .\32xl\:w-60 {
+    width: 15rem;
   }
 
   .\32xl\:text-4xl {
@@ -1212,18 +1220,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.5rem;
   }
 
-  .\32xl\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
-  .\32xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .\32xl\:text-6xl {
-    font-size: 3.75rem;
+  .\32xl\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -1232,13 +1230,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2rem;
   }
 
-  .\32xl\:text-7xl {
-    font-size: 4.5rem;
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
-  .\32xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
